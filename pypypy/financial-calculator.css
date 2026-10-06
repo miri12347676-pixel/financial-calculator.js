@@ -1,0 +1,64 @@
+:host {
+    display: block;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    font: 14px/1.4 Arial, sans-serif; /* объединили font-family и font-size */
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 0 0 15px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font: inherit; /* наследует шрифт от :host */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:invalid {
+    border-color: #ff4d4d;
+}
+
+.results {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.result-value {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.error {
+    display: none;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #ff4d4d;
+}
